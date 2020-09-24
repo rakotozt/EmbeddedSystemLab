@@ -6,8 +6,9 @@ void uart1_init( int32_t baudrate) {
     ANSELA=0; //analog off 
     TRISA=0xff; //digital inputs off
   
-    
-    
+    RPA0Rbits.RPA0R=0001; //assign the U1TX to RPA0 (output))
+    U1RXRbits.U1RXR=0;//set U1RX to RPA2
+    //based on datasheet page 134
     
     U1MODEbits.ON = 1 ; //enables UART 
     U1MODEbits.BRGH=0; //Standard Speed mode ? 16x baud clock enabled
