@@ -47,7 +47,7 @@ void uart1_txwrite(uint8_t c ) {
 
 void uart1_txwrite_str(char *c) {
 //U1STA is  the USB control register 
-	for(c = 0 ;*c != '\0'; c++){
+	for(;*c != '\0'; c++){
 		uart1_txwrite(*c);
 	}
    }

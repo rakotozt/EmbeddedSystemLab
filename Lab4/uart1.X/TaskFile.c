@@ -65,7 +65,7 @@ void main()
 	// Print timing result. Doubles OK here. Not time critical code.
 	sprintf(buffer, "UINT8 MINUS: %.06f us per operation\r\n",(double)(t2-t1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
 	uart1_txwrite_str(buffer);
-uart1_txwrite_str("Hello World Tafita Rakotoz speaking\r\n");
+uart1_txwrite_str("Hello World Tafita Rakotoz speaking \r\n");
 uart1_txwrite_str("Cool \r\n");
 	// Add code to test other sizes and operators
 	// ...
