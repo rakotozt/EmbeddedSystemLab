@@ -48,26 +48,111 @@ void test_uint8_mult()
 }
 
 
+void test_uint8_add()
+{
+	uint32_t i;
+	double i1 , i2, i3;
+	i1 = 15;
+	i2 = 26;
+	for (i=0; i<NUM_ITERATIONS; i++)
+	{
+		// Make sure NUM_REPS is the same as the number
+		// of repeated lines here.
+		i3 = i1+i2;
+		i3 = i1+i2;
+		i3 = i1+i2;
+		i3 = i1+i2;
+		i3 = i1+i2;
+		i3 = i1+i2;
+		i3 = i1+i2;
+		i3 = i1+i2;
+		i3 = i1+i2;
+		i3 = i1+i2;
+	}
+}
+
+void test_uint8_min()
+{
+	uint32_t i;
+	double i1 , i2, i3;
+	i1 = 15;
+	i2 = 26;
+	for (i=0; i<NUM_ITERATIONS; i++)
+	{
+		// Make sure NUM_REPS is the same as the number
+		// of repeated lines here.
+		i3 = i1-i2;
+		i3 = i1-i2;
+		i3 = i1-i2;
+		i3 = i1-i2;
+		i3 = i1-i2;
+		i3 = i1-i2;
+		i3 = i1-i2;
+		i3 = i1-i2;
+		i3 = i1-i2;
+		i3 = i1-i2;
+	}
+}
+
+void test_uint8_div()
+{
+	uint32_t i;
+	double i1 , i2, i3;
+	i1 = 15;
+	i2 = 26;
+	for (i=0; i<NUM_ITERATIONS; i++)
+	{
+		// Make sure NUM_REPS is the same as the number
+		// of repeated lines here.
+		i3 = i1/i2;
+		i3 = i1/i2;
+		i3 = i1/i2;
+		i3 = i1/i2;
+		i3 = i1/i2;
+		i3 = i1/i2;
+		i3 = i1/i2;
+		i3 = i1/i2;
+		i3 = i1/i2;
+		i3 = i1/i2;
+	}
+}
+
+
 void main()
 {
-	uint32_t t1, t2;
+	uint32_t tadd1, tadd2,tmin1,tmin2,tmult1,tmult2,tdiv1,tdiv2; 
 	// !!! Add code: Initialize modules and turn on interrupts
 	uart1_init(9600) ;
 	zTimerOn(); 
 	zTimerSet(200);
 	uart1_txwrite_str("Performance Summary: Time per operation statistics\r\n");
 
-	// Test multiplying bytes
-	t1 = zTimerReadms();
-	test_uint8_mult();
-	t2 = zTimerReadms();
 
+	tadd1 = zTimerReadms();
+	test_uint8_add();
+	tadd2 = zTimerReadms();
+
+	tmin1 = zTimerReadms();
+	test_uint8_min();
+	tmin2 = zTimerReadms();
+    
+    tmult1 = zTimerReadms();
+	test_uint8_mult();
+	tmult2 = zTimerReadms();
+    
+    tdiv1 = zTimerReadms();
+	test_uint8_div();
+	tdiv2 = zTimerReadms();
+    
+    
 	// Print timing result. Doubles OK here. Not time critical code.
-	sprintf(buffer, "UINT8 MINUS: %.06f us per operation\r\n",(double)(t2-t1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
+	sprintf(buffer, "UINT8 ADD: %.06f us per operation\r\n",(double)(tadd2-tadd1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
+	sprintf(buffer, "UINT8 MIN: %.06f us per operation\r\n",(double)(tmin2-tmin1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
+	sprintf(buffer, "UINT8 MULT: %.06f us per operation\r\n",(double)(tmult2-tmult1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
+	sprintf(buffer, "UINT8 DIV: %.06f us per operation\r\n",(double)(tdiv2-tdiv1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
+
 	uart1_txwrite_str(buffer);
-uart1_txwrite_str("Hello World Tafita Rakotoz speaking \r\n");
-uart1_txwrite_str("Cool \r\n");
-	// Add code to test other sizes and operators
-	// ...
+
+
 	while (1); // When done, wait forever.
 }
