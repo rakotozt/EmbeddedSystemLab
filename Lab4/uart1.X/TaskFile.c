@@ -135,10 +135,7 @@ void main()
     
 	// Print timing result. Doubles OK here. Not time critical code.
 	sprintf(buffer, "UINT8 mult: %.06f us per operation\r\n",(double)(t2-t1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
-	//sprintf(buffer, "UINT8 MIN: %.06f us per operation\r\n",(double)(tmin2-tmin1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
-	//sprintf(buffer, "UINT8 MULT: %.06f us per operation\r\n",(double)(tmult2-tmult1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
-	//sprintf(buffer, "UINT8 DIV: %.06f us per operation\r\n",(double)(tdiv2-tdiv1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
-
+	
 	uart1_txwrite_str(buffer);
 
 
