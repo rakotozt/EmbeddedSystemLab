@@ -5,8 +5,8 @@
         <group>
             <file>file:/home/rakoto/ECE414/EmbeddedSystemLab/Lab4/uart1.X/uart1.c</file>
             <file>file:/home/rakoto/ECE414/EmbeddedSystemLab/Lab4/uart1.X/TaskFile.c</file>
-            <file>file:/home/rakoto/ECE414/EmbeddedSystemLab/Lab4/uart1.X/ztimer.c</file>
             <file>file:/home/rakoto/ECE414/EmbeddedSystemLab/Lab4/uart1.X/ztimer.h</file>
+            <file>file:/home/rakoto/ECE414/EmbeddedSystemLab/Lab4/uart1.X/ztimer.c</file>
         </group>
     </open-files>
 </project-private>
