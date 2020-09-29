@@ -5,7 +5,7 @@
  * Created on September 5, 2019, 2:06 PM
  * This module implements a timer matching the functionality of the interrupt-
  * driven timer described in Section 4.5 of the Zybook "Programming Embedded 
- * Systems".  A key difference is that the timer flag is encapsulated in the 
+ * Systems". A key difference is that the timer flag is encapsulated in the 
  * modulel calling ReadTimerFlag returns its value and clears the flag.  This
  * means that we don't have to use a global variable to pass the flag.
  * 

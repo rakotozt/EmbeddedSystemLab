@@ -7,7 +7,7 @@
  * 
  */
 #include "uart1.h"
-#include<plib.h>
+#include <plib.h>
 
 void uart1_init( int32_t baudrate) {
 
@@ -47,10 +47,14 @@ void uart1_txwrite(uint8_t c ) {
 
 void uart1_txwrite_str(char *c) {
 //U1STA is  the USB control register 
-	for(;*c != '\0'; c++){
+	for(c = 0 ;*c != '\0'; c++){
 		uart1_txwrite(*c);
 	}
    }
+
+/*
+ 
+*/
 uint8_t uart1_rxrdy() {   /* returns true when the UART receiver has
                              a character ready for reading*/
 return 	U1STAbits.URXDA ;
