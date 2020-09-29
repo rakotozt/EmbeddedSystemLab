@@ -1,4 +1,173 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LCD_2_4:LCD_2_4 U?
+U 1 1 5F73713A
+P 5850 3750
+F 0 "U?" H 5850 5175 50  0000 C CNN
+F 1 "LCD_2_4" H 5850 5084 50  0000 C CNN
+F 2 "" H 5900 3750 50  0001 C CNN
+F 3 "" H 5900 3750 50  0001 C CNN
+	1    5850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PIC32MX250F128B-V_SP:PIC32MX250F128B-V_SP U?
+U 1 1 5F73896B
+P 3000 3500
+F 0 "U?" H 2450 4767 50  0000 C CNN
+F 1 "PIC32MX250F128B-V_SP" H 2450 4676 50  0000 C CNN
+F 2 "DIP254P762X508-28" H 3000 3500 50  0001 L BNN
+F 3 "SPDIP-28 Microchip" H 3000 3500 50  0001 L BNN
+F 4 "PIC32MX250F128B-V/SP" H 3000 3500 50  0001 L BNN "Field4"
+F 5 "32 Bit MCU, 128KB Flash, 32KB RAM, 40 MHz, 28 Pin, 3 Comp, CTMU, RTCC, 28 SPDIP" H 3000 3500 50  0001 L BNN "Field5"
+F 6 "Microchip" H 3000 3500 50  0001 L BNN "Field6"
+F 7 "None" H 3000 3500 50  0001 L BNN "Field7"
+F 8 "Unavailable" H 3000 3500 50  0001 L BNN "Field8"
+	1    3000 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3000 4550 3000
+Wire Wire Line
+	4550 3000 4550 4150
+Wire Wire Line
+	4550 4150 5100 4150
+Wire Wire Line
+	3700 3300 4750 3300
+Wire Wire Line
+	4750 3300 4750 3950
+Wire Wire Line
+	4750 3950 5100 3950
+Wire Wire Line
+	1200 3500 800  3500
+Wire Wire Line
+	800  3500 800  5000
+Wire Wire Line
+	800  5000 4850 5000
+Wire Wire Line
+	4850 5000 4850 3850
+Wire Wire Line
+	4850 3850 5100 3850
+Wire Wire Line
+	1200 3400 750  3400
+Wire Wire Line
+	750  3400 750  5050
+Wire Wire Line
+	750  5050 4900 5050
+Wire Wire Line
+	4900 5050 4900 3750
+Wire Wire Line
+	4900 3750 5100 3750
+Wire Wire Line
+	1200 3600 850  3600
+Wire Wire Line
+	850  3600 850  4950
+Wire Wire Line
+	850  4950 4800 4950
+Wire Wire Line
+	4800 4950 4800 3650
+Wire Wire Line
+	4800 3650 5100 3650
+Wire Wire Line
+	1200 4200 900  4200
+Wire Wire Line
+	900  4200 900  4900
+Wire Wire Line
+	900  4900 4700 4900
+Wire Wire Line
+	4700 4900 4700 3350
+Wire Wire Line
+	4700 3350 5100 3350
+Wire Wire Line
+	1200 3200 950  3200
+Wire Wire Line
+	950  3200 950  2200
+Wire Wire Line
+	950  2200 4850 2200
+Wire Wire Line
+	4850 2200 4850 3150
+Wire Wire Line
+	4850 3150 5100 3150
+Wire Wire Line
+	1200 3300 850  3300
+Wire Wire Line
+	850  3300 850  2100
+Wire Wire Line
+	850  2100 4950 2100
+Wire Wire Line
+	5100 3450 4950 3450
+Wire Wire Line
+	4950 2100 4950 3450
+Wire Wire Line
+	1200 4000 950  4000
+Wire Wire Line
+	950  4000 950  4850
+Wire Wire Line
+	950  4850 4650 4850
+Wire Wire Line
+	4650 4850 4650 3250
+Wire Wire Line
+	4650 3250 5100 3250
+Wire Wire Line
+	1200 2800 750  2800
+Wire Wire Line
+	750  2800 750  2000
+Wire Wire Line
+	750  2000 4600 2000
+Wire Wire Line
+	4600 2000 4600 4350
+Wire Wire Line
+	4600 4350 5100 4350
+$Comp
+L power:GND #PWR?
+U 1 1 5F744ED9
+P 5100 4850
+F 0 "#PWR?" H 5100 4600 50  0001 C CNN
+F 1 "GND" H 5105 4677 50  0000 C CNN
+F 2 "" H 5100 4850 50  0001 C CNN
+F 3 "" H 5100 4850 50  0001 C CNN
+	1    5100 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4450 5100 4850
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F7462EC
+P 5000 1950
+F 0 "#PWR?" H 5000 1800 50  0001 C CNN
+F 1 "+3.3V" H 5015 2123 50  0000 C CNN
+F 2 "" H 5000 1950 50  0001 C CNN
+F 3 "" H 5000 1950 50  0001 C CNN
+	1    5000 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1950 5000 2750
+Wire Wire Line
+	5000 2950 5100 2950
+Wire Wire Line
+	5100 2850 5000 2850
+Connection ~ 5000 2850
+Wire Wire Line
+	5000 2850 5000 2950
+Wire Wire Line
+	5100 2750 5000 2750
+Connection ~ 5000 2750
+Wire Wire Line
+	5000 2750 5000 2850
 $EndSCHEMATC

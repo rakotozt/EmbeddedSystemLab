@@ -27,7 +27,7 @@ uint8_t buffer[64];
 void test_uint8_mult()
 {
 	uint32_t i;
-	uint64_t i1 , i2, i3;
+	uint16_t i1 , i2, i3;
 	i1 = 15;
 	i2 = 26;
 	for (i=0; i<NUM_ITERATIONS; i++)
@@ -51,7 +51,7 @@ void test_uint8_mult()
 void test_uint8_add()
 {
 	uint32_t i;
-	double i1 , i2, i3;
+	uint16_t i1 , i2, i3;
 	i1 = 15;
 	i2 = 26;
 	for (i=0; i<NUM_ITERATIONS; i++)
@@ -74,7 +74,7 @@ void test_uint8_add()
 void test_uint8_min()
 {
 	uint32_t i;
-	double i1 , i2, i3;
+	uint16_t i1 , i2, i3;
 	i1 = 15;
 	i2 = 26;
 	for (i=0; i<NUM_ITERATIONS; i++)
@@ -97,7 +97,7 @@ void test_uint8_min()
 void test_uint8_div()
 {
 	uint32_t i;
-	double i1 , i2, i3;
+	uint16_t i1 , i2, i3;
 	i1 = 15;
 	i2 = 26;
 	for (i=0; i<NUM_ITERATIONS; i++)
@@ -129,12 +129,12 @@ void main()
 
 
 	t1 = zTimerReadms();
-	test_uint8_add();
+	test_uint8_mult();///////////////////////////////////////////////////////////////////////////////////
 	t2 = zTimerReadms();
     
     
 	// Print timing result. Doubles OK here. Not time critical code.
-	sprintf(buffer, "UINT8 ADD: %.06f us per operation\r\n",(double)(tadd2-tadd1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
+	sprintf(buffer, "UINT8 mult: %.06f us per operation\r\n",(double)(t2-t1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
 	//sprintf(buffer, "UINT8 MIN: %.06f us per operation\r\n",(double)(tmin2-tmin1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
 	//sprintf(buffer, "UINT8 MULT: %.06f us per operation\r\n",(double)(tmult2-tmult1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
 	//sprintf(buffer, "UINT8 DIV: %.06f us per operation\r\n",(double)(tdiv2-tdiv1)/(double)NUM_ITERATIONS /(double)NUM_REPS*1000.0);
