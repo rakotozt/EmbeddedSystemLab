@@ -7,6 +7,7 @@
       <itemPath>ts_lcd.h</itemPath>
       <itemPath>tft_gfx.h</itemPath>
       <itemPath>tft_master.h</itemPath>
+      <itemPath>config.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"

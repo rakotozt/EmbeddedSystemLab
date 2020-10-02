@@ -678,6 +678,8 @@
                   value=""/>
         <property key="warningmessagebreakoptions.warningmessages" value="holdstate"/>
       </Simulator>
+      <item path="TaskFile.c" ex="true" overriding="false">
+      </item>
       <pkob4hybrid>
         <property key="ADC 1" value="true"/>
         <property key="AutoSelectMemRanges" value="auto"/>
@@ -755,7 +757,7 @@
         <property key="toolpack.updateoptions.packversion"
                   value="Press to select which tool pack to use"/>
       </pkob4hybrid>
-      <item path="unitTest.c" ex="true" overriding="false">
+      <item path="unitTest.c" ex="false" overriding="false">
         <C32>
         </C32>
         <C32-AR>
