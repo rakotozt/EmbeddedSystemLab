@@ -1,22 +1,4 @@
 /* 
- * File:  uart1.c
- * Author: Tafita Rakoto & Chiko Dhire 
- *
- * Created on September 28, 2020
- * This module implements uart functions
- * 
- */
-#include "config.h"
-#include ""
-#include <plib.h>
-
-uint8_t ts_lcd_get_ts(uint16_t *x, uint16_t *y);
-
-void ts_lcd_init();
-
-
-
-/* 
  * File:   touch_main.c
  * Author: watkinma
  *
@@ -66,7 +48,7 @@ int main(int argc, char** argv) {
         tft_setTextColor(ILI9341_WHITE); tft_setTextSize(2);
 
         //erase old text
-        tft_setTextColor(ILI9341_BLUE);
+        tft_setTextColor(ILI9341_BLACK);
         tft_writeString(buffer);
         
         struct TSPoint p;
@@ -75,13 +57,15 @@ int main(int argc, char** argv) {
         p.z = 0;
         getPoint(&p);
         tft_setCursor(20, 100);
-        tft_setTextColor(ILI9341_GREEN);
+        tft_setTextColor(ILI9341_WHITE);
         sprintf(buffer,"x: %d, y: %d, z: %d", p.x, p.y, p.z);
         tft_writeString(buffer);
+        tft_drawCircle( p.x, p.y, 80, 50);
     
         delay_ms(100);
     }
     
     return (EXIT_SUCCESS);
 }
+
 

@@ -8,6 +8,7 @@
       <itemPath>tft_gfx.h</itemPath>
       <itemPath>tft_master.h</itemPath>
       <itemPath>config.h</itemPath>
+      <itemPath>adc_intf.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -19,6 +20,9 @@
       <itemPath>ts_lcd.c</itemPath>
       <itemPath>tft_master.c</itemPath>
       <itemPath>tft_gfx.c</itemPath>
+      <itemPath>glcfont.c</itemPath>
+      <itemPath>adc_intf.c</itemPath>
+      <itemPath>touchscreen.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
