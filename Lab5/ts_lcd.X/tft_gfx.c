@@ -125,12 +125,6 @@ void tft_drawCircleHelper( short x0, short y0,
   }
 }
 
-//void tft_crosshair(short x0, short y0, unsigned short color){
-//    
-// tft_drawLine(x0-20, y0, x0+20, y0, color); 
-// tft_drawLine(x0, y0-20, x0, y0+20, color);
-//}
-
 void tft_fillCircle(short x0, short y0, short r, unsigned short color) {
 /* Draw a filled circle with center (x0,y0) and radius r, with given color
  * Parameters:

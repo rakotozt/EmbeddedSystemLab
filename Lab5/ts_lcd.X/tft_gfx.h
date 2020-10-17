@@ -4,8 +4,6 @@
 
 unsigned short cursor_y, cursor_x, textsize, textcolor, textbgcolor, wrap, rotation;
 
-//void tft_crosshair(short x0, short y0, unsigned short color);
-
 void tft_drawLine(short x0, short y0, short x1, short y1, unsigned short color);
 void tft_drawRect(short x, short y, short w, short h, unsigned short color);
 

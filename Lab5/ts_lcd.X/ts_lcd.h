@@ -1,43 +1,29 @@
-// Modified by Matthew Watkins for PIC32
+/* 
+ * File:   ts_lcd.h
+ * Author: crdhi
+ *
+ * Created on September 29, 2020, 9:44 AM
+ */
 
-// Touch screen library with X Y and Z (pressure) readings as well
-// as oversampling to avoid 'bouncing'
-// (c) ladyada / adafruit
-// Code under MIT License
+#ifndef TS_LCD_H    /* Guard against multiple inclusion */
+#define TS_LCD_H
 
-#ifndef _ADAFRUIT_TOUCHSCREEN_H_
-#define _ADAFRUIT_TOUCHSCREEN_H_
-#include <stdint.h>
 
-typedef short int16_t;
-typedef unsigned short uint16_t;
-//typedef char int8_t;
-typedef unsigned char uint8_t;
+#include <plib.h>
+#include "adc_intf.h"
+#include "TouchScreen.h"
+#include "tft_master.h"
+#include "tft_gfx.h"
 
-//Assuming Port A for all
-#define XPbit BIT_4
-#define XMbit BIT_0
-//XM ADC position
-#define XMAN 0
-#define YPbit BIT_1
-//YP ADC position
-#define YPAN 1
-#define YMbit BIT_3
+#define XM AN0
+#define YP AN1
+#include <xc.h> 
+#include <inttypes.h>
 
-//resistance between X+ and X- terminals
-//measure for specific device
-#define RXPLATE 275
 
-struct TSPoint {
-  int16_t x, y, z;
-};
+uint8_t ts_lcd_get_ts(uint16_t *x, uint16_t *y) ; 
 
-void setTSPoint(struct TSPoint * p, int16_t x0, int16_t y0, int16_t z0);
+void ts_lcd_init(); 
 
- 
-/*uint16_t pressure(void);
-int readTouchY();
-int readTouchX();*/
-void getPoint(struct TSPoint * p);
 
 #endif
