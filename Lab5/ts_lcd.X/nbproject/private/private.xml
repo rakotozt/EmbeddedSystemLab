@@ -2,13 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/rakotozt/Desktop/Calculator/ts_lcd.X/calculator_fsm.c</file>
-            <file>file:/C:/Users/rakotozt/Desktop/Calculator/ts_lcd.X/ts_lcd.c</file>
-            <file>file:/C:/Users/rakotozt/Desktop/Calculator/ts_lcd.X/reading_interpreter.c</file>
-            <file>file:/C:/Users/rakotozt/Desktop/Calculator/ts_lcd.X/lcd_gui.c</file>
-            <file>file:/C:/Users/rakotozt/Desktop/Calculator/ts_lcd.X/main.c</file>
-            <file>file:/C:/Users/rakotozt/Desktop/Calculator/ts_lcd.X/reading_interpreter.h</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
