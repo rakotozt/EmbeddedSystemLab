@@ -1,116 +1,122 @@
-#include "calculator_fsm.h"
+//
+//
+//
+//
+/*Define user variables and functions for this state machine here.*/
+unsigned char PNG_Clk;
+void TimerISR() {
+   PNG_Clk = 1;
+}
 
-void TickFct_Calculator(enum in in ) {
-    static enum in op;
-   switch(CLC_State) { // Transitions
+enum PNG_States { PNG_Start_L, PNG_Move, PNG_StartR, PNG_Left, PNG_Right, PNG_Restart, PNG_Gameover } PNG_State;
+
+TickFct_Pong_game() {
+   switch(PNG_State) { // Transitions
       case -1:
-         CLC_State = CLC_Idle;
+         PNG_State = PNG_Start_L;
          break;
-         case CLC_Idle: 
-         if (1) {
-             op=EQU;
-            CLC_State = CLC_pResult;
+         case PNG_Start_L: 
+         if (pdlL==1) {
+            PNG_State = PNG_Move;
          }
-         break;
-      case CLC_pResult: 
-         if (in>=ZERO && in<=NINE && op==EQU) {
-            CLC_State = CLC_arg1;
-             
-         }
-         else if (in>=ZERO && in<=NINE && op!=EQU)
-         {CLC_State = CLC_arg2;}
-         break;
-      case CLC_arg1: 
-         if (in >=PLUS && in <= EQU) {
-            CLC_State = CLC_operand;
-            op=in;
-         }
-         else if (in>=ZERO && in<=NINE ) {
-             arg1=arg1*10+in;
-             if(!overFlowCheck(arg1)){
-             CLC_State = CLC_arg1;}
-             else{CLC_State =CLC_ERR;}
-             
+         else if (pdlL==0) {
+            PNG_State = PNG_Start_L;
          }
          break;
-      case CLC_operand: 
-         if (in>=ZERO && in<=NINE) {
-              arg2=arg2*10+in;
-             if(!overFlowCheck(arg2)){
-             CLC_State = CLC_arg2;}
+      case PNG_Move: 
+         if (xposB==width) {
+            PNG_State = PNG_Right;
          }
-         else if (in >=PLUS && in <= EQU) {
-            CLC_State = CLC_operand;
-            op=in;
+         else if (xposB>=padlewidth && xposB<=320-paddlewidth;) {
+            PNG_State = PNG_Move;
          }
-         break;
-      case CLC_arg2: 
-         if (in>=ZERO && in<=NINE) {
-             arg2=arg2*10+in; 
-             if(!overFlowCheck(arg2)){
-             CLC_State = CLC_arg2;}
-             else{CLC_State =CLC_ERR;}
-             
-         }
-         else if (in >=PLUS && in <= EQU && op==DIV && arg2==0) {
-            CLC_State = CLC_divERR;
-         }
-         else if (in >=PLUS && in <= EQU && op!=DIV && arg2!=0) {
-          result=operation(arg1,arg2,op);
-          if(!overFlowCheck(result)){
-          op=in;
-            CLC_State = CLC_operation ;}
-          else{CLC_State = CLC_ERR ;}
+         else if (xposB==0) {
+            PNG_State = PNG_Left;
          }
          break;
-      case CLC_operation : 
-         if (1) {
-            CLC_State = CLC_pResult;
+      case PNG_StartR: 
+         if (pdlR == 1) {
+            PNG_State = PNG_Move;
          }
          break;
-      case CLC_divERR: 
+      case PNG_Left: 
+         if (pdlL==xposB) {
+            PNG_State = PNG_Move;
+         }
+         else if (pdlL!==xposB) {
+            PNG_State = PNG_Restart;
+            rightWin=0;
+            leftWin=1;   
+         }
          break;
-               case CLC_ERR: 
+      case PNG_Right: 
+         if (xpdlL == xposB) {
+            PNG_State = PNG_Move;
+         }
+         else if (pdlR!==xposB) {
+            PNG_State = PNG_Restart;
+            rightWin=0;
+            leftWin=1;
+         }
+         break;
+      case PNG_Restart: 
+         if ((scoreL == maxScore)||(scoreR == maxScore)) {
+            PNG_State = PNG_Gameover;
+         }
+         else if ((scoreR<maxScore) && leftWin) {
+            PNG_State = PNG_StartR;
+            leftWin=0;
+         }
+         else if ((scoreL<maxScore) && rightWin) {
+            PNG_State = PNG_Start_L;
+            rightwin = 0;
+         }
+         break;
+      case PNG_Gameover: 
          break;
       default:
-         CLC_State = CLC_Idle;
+         PNG_State = PNG_Start_L;
    } // Transitions
 
-   switch(CLC_State) { // State actions
-      case CLC_Idle:
-         arg1=0; 
-         arg2=0; 
-         result=0;
-         op=EQU;
-         
+   switch(PNG_State) { // State actions
+      case PNG_Start_L:
+         xposB = paddlewidth;
+         ypos = 120;
+         sound = 0;
+         direction = 1;
          break;
-      case CLC_pResult:
-         sprintf(out, "%d", result);
-         
+      case PNG_Move:
+         if(direction==0){
+         xposB = xPosB - speed;
+         yposB = yposB;
+         }
+         else{
+         xposB = xPosB + speed;
+         yposB = yposB;
+         }
          break;
-      case CLC_arg1:
-         sprintf(out, "%d", arg1);
+      case PNG_StartR:
+         xposB = 320-paddlewidth;
+         ypos = 120;
+         direction = 0;
          break;
-      case CLC_operand:
+      case PNG_Left:
+         direction = 0;
+         sound = 1;
          break;
-      case CLC_arg2:
-             sprintf(out, "%d", arg2);
+      case PNG_Right:
+         direction = 1;
+         sound = 1;
          break;
-      case CLC_operation :
-        if(op==EQU)
-           {arg1=0; 
-             arg2=0;}
-        else{
-               arg1=result; 
-              arg2=0;
-                }
-
+      case PNG_Restart:
+         if (leftWin){
+         scoreL ++;}
+         else if(rightWin){
+         scoreR++;
+         }  
          break;
-      case CLC_divERR:
-             sprintf(out, "%s","DIV0");
-         break;
-            case CLC_ERR:
-            sprintf(out, "%s","ERROR");
+      case PNG_Gameover:
+         gameover =1;
          break;
       default: // ADD default behaviour below
       break;
@@ -118,36 +124,16 @@ void TickFct_Calculator(enum in in ) {
 
 }
 
+int main() {
+   const unsigned int periodPong_game = 1000; // 1000 ms default
+   TimerSet(periodPong_game);
+   TimerOn();
+   PNG_State = -1; // Initial state
+   B = 0; // Init outputs
 
-
-int32_t operation(int32_t argument1, int32_t argument2, enum in mathOperator){ 
-
-
-   switch (mathOperator){
-      case PLUS: 
-         return argument1+argument2 ;
-         break ;
-
-      case MINUS:
-         return argument1-argument2; 
-         break; 
-
-      case MULT: 
-         return argument1*argument2 ; 
-         break; 
-
-      case DIV: 
-         return argument1/argument2;
-         break;
-      default:
-         return 00000000;
-         break;
-   }
- }
-
-
-
-uint8_t overFlowCheck(int32_t num){
-   if(num<111111111){return 0;}
-   else{return 1;}
-}
+   while(1) {
+      TickFct_Pong_game();
+      while(!PNG_Clk);
+      PNG_Clk = 0;
+   } // while (1)
+} // Main
