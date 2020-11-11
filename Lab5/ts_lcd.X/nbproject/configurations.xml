@@ -11,8 +11,8 @@
       <itemPath>TouchScreen.h</itemPath>
       <itemPath>adc_intf.h</itemPath>
       <itemPath>lcd_gui.h</itemPath>
-      <itemPath>calculator_fsm.h</itemPath>
       <itemPath>reading_interpreter.h</itemPath>
+      <itemPath>Pong FSM.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -29,9 +29,9 @@
       <itemPath>lcd_gui.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>glcdfont.c</itemPath>
-      <itemPath>calculator_fsm.c</itemPath>
       <itemPath>curseurTest.c</itemPath>
       <itemPath>reading_interpreter.c</itemPath>
+      <itemPath>Pong FSM.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

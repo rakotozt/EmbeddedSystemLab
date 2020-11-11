@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=ts_lcd.c tft_master.c tft_gfx.c TouchScreen.c adc_intf.c lcd_gui.c main.c glcdfont.c calculator_fsm.c reading_interpreter.c
+SOURCEFILES_QUOTED_IF_SPACED=ts_lcd.c tft_master.c tft_gfx.c TouchScreen.c adc_intf.c lcd_gui.c main.c glcdfont.c reading_interpreter.c "Pong FSM.c"
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/ts_lcd.o ${OBJECTDIR}/tft_master.o ${OBJECTDIR}/tft_gfx.o ${OBJECTDIR}/TouchScreen.o ${OBJECTDIR}/adc_intf.o ${OBJECTDIR}/lcd_gui.o ${OBJECTDIR}/main.o ${OBJECTDIR}/glcdfont.o ${OBJECTDIR}/calculator_fsm.o ${OBJECTDIR}/reading_interpreter.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/ts_lcd.o.d ${OBJECTDIR}/tft_master.o.d ${OBJECTDIR}/tft_gfx.o.d ${OBJECTDIR}/TouchScreen.o.d ${OBJECTDIR}/adc_intf.o.d ${OBJECTDIR}/lcd_gui.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/glcdfont.o.d ${OBJECTDIR}/calculator_fsm.o.d ${OBJECTDIR}/reading_interpreter.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/ts_lcd.o ${OBJECTDIR}/tft_master.o ${OBJECTDIR}/tft_gfx.o ${OBJECTDIR}/TouchScreen.o ${OBJECTDIR}/adc_intf.o ${OBJECTDIR}/lcd_gui.o ${OBJECTDIR}/main.o ${OBJECTDIR}/glcdfont.o ${OBJECTDIR}/reading_interpreter.o "${OBJECTDIR}/Pong FSM.o"
+POSSIBLE_DEPFILES=${OBJECTDIR}/ts_lcd.o.d ${OBJECTDIR}/tft_master.o.d ${OBJECTDIR}/tft_gfx.o.d ${OBJECTDIR}/TouchScreen.o.d ${OBJECTDIR}/adc_intf.o.d ${OBJECTDIR}/lcd_gui.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/glcdfont.o.d ${OBJECTDIR}/reading_interpreter.o.d "${OBJECTDIR}/Pong FSM.o.d"
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/ts_lcd.o ${OBJECTDIR}/tft_master.o ${OBJECTDIR}/tft_gfx.o ${OBJECTDIR}/TouchScreen.o ${OBJECTDIR}/adc_intf.o ${OBJECTDIR}/lcd_gui.o ${OBJECTDIR}/main.o ${OBJECTDIR}/glcdfont.o ${OBJECTDIR}/calculator_fsm.o ${OBJECTDIR}/reading_interpreter.o
+OBJECTFILES=${OBJECTDIR}/ts_lcd.o ${OBJECTDIR}/tft_master.o ${OBJECTDIR}/tft_gfx.o ${OBJECTDIR}/TouchScreen.o ${OBJECTDIR}/adc_intf.o ${OBJECTDIR}/lcd_gui.o ${OBJECTDIR}/main.o ${OBJECTDIR}/glcdfont.o ${OBJECTDIR}/reading_interpreter.o ${OBJECTDIR}/Pong\ FSM.o
 
 # Source Files
-SOURCEFILES=ts_lcd.c tft_master.c tft_gfx.c TouchScreen.c adc_intf.c lcd_gui.c main.c glcdfont.c calculator_fsm.c reading_interpreter.c
+SOURCEFILES=ts_lcd.c tft_master.c tft_gfx.c TouchScreen.c adc_intf.c lcd_gui.c main.c glcdfont.c reading_interpreter.c Pong FSM.c
 
 
 CFLAGS=
@@ -154,17 +154,17 @@ ${OBJECTDIR}/glcdfont.o: glcdfont.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/glcdfont.o 
 	@${FIXDEPS} "${OBJECTDIR}/glcdfont.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/glcdfont.o.d" -o ${OBJECTDIR}/glcdfont.o glcdfont.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/calculator_fsm.o: calculator_fsm.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/calculator_fsm.o.d 
-	@${RM} ${OBJECTDIR}/calculator_fsm.o 
-	@${FIXDEPS} "${OBJECTDIR}/calculator_fsm.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/calculator_fsm.o.d" -o ${OBJECTDIR}/calculator_fsm.o calculator_fsm.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
-	
 ${OBJECTDIR}/reading_interpreter.o: reading_interpreter.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/reading_interpreter.o.d 
 	@${RM} ${OBJECTDIR}/reading_interpreter.o 
 	@${FIXDEPS} "${OBJECTDIR}/reading_interpreter.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/reading_interpreter.o.d" -o ${OBJECTDIR}/reading_interpreter.o reading_interpreter.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/Pong\ FSM.o: Pong\ FSM.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} "${OBJECTDIR}/Pong FSM.o".d 
+	@${RM} "${OBJECTDIR}/Pong FSM.o" 
+	@${FIXDEPS} "${OBJECTDIR}/Pong FSM.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Pong FSM.o.d" -o "${OBJECTDIR}/Pong FSM.o" "Pong FSM.c"    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
 else
 ${OBJECTDIR}/ts_lcd.o: ts_lcd.c  nbproject/Makefile-${CND_CONF}.mk
@@ -215,17 +215,17 @@ ${OBJECTDIR}/glcdfont.o: glcdfont.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/glcdfont.o 
 	@${FIXDEPS} "${OBJECTDIR}/glcdfont.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/glcdfont.o.d" -o ${OBJECTDIR}/glcdfont.o glcdfont.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/calculator_fsm.o: calculator_fsm.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/calculator_fsm.o.d 
-	@${RM} ${OBJECTDIR}/calculator_fsm.o 
-	@${FIXDEPS} "${OBJECTDIR}/calculator_fsm.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/calculator_fsm.o.d" -o ${OBJECTDIR}/calculator_fsm.o calculator_fsm.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
-	
 ${OBJECTDIR}/reading_interpreter.o: reading_interpreter.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/reading_interpreter.o.d 
 	@${RM} ${OBJECTDIR}/reading_interpreter.o 
 	@${FIXDEPS} "${OBJECTDIR}/reading_interpreter.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/reading_interpreter.o.d" -o ${OBJECTDIR}/reading_interpreter.o reading_interpreter.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/Pong\ FSM.o: Pong\ FSM.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} "${OBJECTDIR}/Pong FSM.o".d 
+	@${RM} "${OBJECTDIR}/Pong FSM.o" 
+	@${FIXDEPS} "${OBJECTDIR}/Pong FSM.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Pong FSM.o.d" -o "${OBJECTDIR}/Pong FSM.o" "Pong FSM.c"    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD) 
 	
 endif
 

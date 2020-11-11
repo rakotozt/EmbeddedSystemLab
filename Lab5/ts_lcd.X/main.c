@@ -16,7 +16,7 @@
 #include "reading_interpreter.h"
  #include "ts_lcd.h"
  #include "lcd_gui.h"
-#include "calculator_fsm.h"
+#include "Pong FSM.h"
 
  #include <stdio.h>
  #include <stdlib.h>

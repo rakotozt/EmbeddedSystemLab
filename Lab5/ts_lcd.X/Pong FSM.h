@@ -1,6 +1,6 @@
 #define _SUPPRESS_PLIB_WARNING
-#ifndef CALCULATOR_FSM_H
-#define	CALCULATOR_FSM_H
+#ifndef PONG_FSM_H
+#define	PONG_FSM_H
 #include "reading_interpreter.h" 
 #include <string.h>
 enum in in;
