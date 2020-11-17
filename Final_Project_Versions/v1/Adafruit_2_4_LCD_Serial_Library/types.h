@@ -8,7 +8,7 @@ typedef struct Paddle {
     short x, y, speed, score;
 } Paddle;
 
-/*
+/* 
  *  Pong game moving ball
  */
 typedef struct Ball {
