@@ -16,6 +16,7 @@
 #include "tft_gfx.h"
 #include "adc_intf.h"
 #include "types.h"
+#include "lcd_gui.h"
 #include <stdlib.h>
 #include <inttypes.h>
 
@@ -43,11 +44,11 @@ void main()
 //    ball.y = 15;
 //    ball.speedX = 2;
 //    ball.speedY = 1;   
-//      
-    ball.x = DW/2;
+//     
+         ball.x = DW/2;
     ball.y = DH/2;
-    ball.speedX = 30;
-    ball.speedY = 30;      
+    ball.speedX = 20;
+    ball.speedY = 10;      
     static int8_t buffer[64];
     uint32_t i, idx;
     
@@ -69,6 +70,7 @@ void main()
     idx = 0;
     while (1)
     {
+    
      p1.x=0;
      p1.y=(readADC(11)/5.7);
      
@@ -83,7 +85,8 @@ void main()
         // Draw some text
         tft_setCursor(0, 0);  // Upper Left Hand Corner
         tft_setTextColor(ILI9341_WHITE);  tft_setTextSize(2);
-        
+
+     //   tft_writeString("Hello World from the other side");
         for (i=1; i<10; i++)
         {
              
@@ -99,6 +102,7 @@ void main()
             //tft_fillRoundRect(320-20, (readADC(5)/5.7), 20, 60, 0, ILI9341_BLUE);
             //tft_fillRoundRect(0, (readADC(11)/5.7), 20, 60, 0, ILI9341_RED);
         }
+
         // Wait a bit.  In real code, use a timer!
         for (i=0; i<1000000; i++) { }        
     }    
@@ -113,40 +117,30 @@ void advance() {
     ball.y = (ball.y + ball.speedY);
 
     // vertical collision detection
-    if (ball.y <= 10) {
+    if (ball.y <= 0) {
         ball.y = 0;
         ball.speedY *= (-1);
-    }else if (ball.y >= MAX_Y - 10) {
-        ball.y = MAX_Y - 10;
+    }else if (ball.y >= MAX_Y - 1) {
+        ball.y = MAX_Y - 1;
         ball.speedY *= (-1);
     }
 
-    // horizontal collision detection //with paddle only?
-    if (ball.x <= 10) {
+    // horizontal collision detection
+    if (ball.x <= 0) {
         // score for p1?
         if (ball.y < p1.y || ball.y > p1.y + PADDLE_HEIGHT - 1) { p2.score += 1; }
 
-        ball.x = 10;
+        ball.x = 0;
         ball.speedX *= (-1);
     }else if (ball.x >= MAX_X - 1) {
         // score for p1?
         if (ball.y < p2.y || ball.y > p2.y + PADDLE_HEIGHT - 1) { p1.score += 1; }
+
         ball.x = MAX_X - 1;
         ball.speedX *= (-1);
     }
 }
 
-
-void drawPaddle(Paddle p) {   
-tft_fillRoundRect(p.x, p.y, 20, 60, 0, ILI9341_BLUE);
-}
-
-/*
- * Draw ball
- */
-void drawBall(Ball b) {
-  tft_fillCircle(b.x ,b.y, 10, ILI9341_GREEN);
-}
 
 
 

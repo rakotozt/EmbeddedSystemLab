@@ -8,6 +8,10 @@
       <itemPath>Adafruit_2_4_LCD_Serial_Library/tft_master.h</itemPath>
       <itemPath>Adafruit_2_4_LCD_Serial_Library/adc_intf.h</itemPath>
       <itemPath>Adafruit_2_4_LCD_Serial_Library/types.h</itemPath>
+      <itemPath>Adafruit_2_4_LCD_Serial_Library/lcd_gui.h</itemPath>
+      <itemPath>Adafruit_2_4_LCD_Serial_Library/port_in.h</itemPath>
+      <itemPath>Adafruit_2_4_LCD_Serial_Library/game_fsm.h</itemPath>
+      <itemPath>Adafruit_2_4_LCD_Serial_Library/timer1.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -21,6 +25,11 @@
       <itemPath>Adafruit_2_4_LCD_Serial_Library/tft_gfx.c</itemPath>
       <itemPath>Adafruit_2_4_LCD_Serial_Library/tft_master.c</itemPath>
       <itemPath>Adafruit_2_4_LCD_Serial_Library/adc_intf.c</itemPath>
+      <itemPath>Adafruit_2_4_LCD_Serial_Library/lcd_gui.c</itemPath>
+      <itemPath>Adafruit_2_4_LCD_Serial_Library/port_in.c</itemPath>
+      <itemPath>Adafruit_2_4_LCD_Serial_Library/main2.c</itemPath>
+      <itemPath>Adafruit_2_4_LCD_Serial_Library/timer1.c</itemPath>
+      <itemPath>Adafruit_2_4_LCD_Serial_Library/game_fsm.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -41,12 +50,14 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>PKOBSKDEPlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.05</languageToolchainVersion>
+        <languageToolchainVersion>2.41</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="PIC32MX_DFP" vendor="Microchip" version="1.0.28"/>
       </packs>
+      <ScriptingSettings>
+      </ScriptingSettings>
       <compileType>
         <linkerTool>
           <linkerLibItems>
@@ -120,6 +131,9 @@
         <property key="preprocessor-macros" value=""/>
         <property key="warning-level" value=""/>
       </C32-AS>
+      <C32-CO>
+        <property key="coverage-enable" value=""/>
+      </C32-CO>
       <C32-LD>
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
@@ -227,6 +241,22 @@
         <property key="programoptions.usehighvoltageonmclr" value="false"/>
         <property key="programoptions.uselvpprogramming" value="true"/>
       </PKOBSKDEPlatformTool>
+      <item path="main.c" ex="true" overriding="false">
+        <C32>
+        </C32>
+        <C32-AR>
+        </C32-AR>
+        <C32-AS>
+        </C32-AS>
+        <C32-CO>
+        </C32-CO>
+        <C32-LD>
+        </C32-LD>
+        <C32CPP>
+        </C32CPP>
+        <C32Global>
+        </C32Global>
+      </item>
     </conf>
   </confs>
 </configurationDescriptor>

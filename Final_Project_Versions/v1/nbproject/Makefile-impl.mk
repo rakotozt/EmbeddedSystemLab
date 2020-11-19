@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=v1
+PROJECTNAME=test_lcd_rev.X
 
 # Active Configuration
 DEFAULTCONF=default
