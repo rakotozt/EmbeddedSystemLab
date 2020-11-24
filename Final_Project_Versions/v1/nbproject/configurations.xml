@@ -12,6 +12,9 @@
       <itemPath>Adafruit_2_4_LCD_Serial_Library/port_in.h</itemPath>
       <itemPath>Adafruit_2_4_LCD_Serial_Library/game_fsm.h</itemPath>
       <itemPath>Adafruit_2_4_LCD_Serial_Library/timer1.h</itemPath>
+      <itemPath>Adafruit_2_4_LCD_Serial_Library/dds.h</itemPath>
+      <itemPath>Adafruit_2_4_LCD_Serial_Library/dac4822.h</itemPath>
+      <itemPath>Adafruit_2_4_LCD_Serial_Library/config.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -30,6 +33,8 @@
       <itemPath>Adafruit_2_4_LCD_Serial_Library/main2.c</itemPath>
       <itemPath>Adafruit_2_4_LCD_Serial_Library/timer1.c</itemPath>
       <itemPath>Adafruit_2_4_LCD_Serial_Library/game_fsm.c</itemPath>
+      <itemPath>Adafruit_2_4_LCD_Serial_Library/dac4822.c</itemPath>
+      <itemPath>Adafruit_2_4_LCD_Serial_Library/dds.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

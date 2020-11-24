@@ -4,11 +4,14 @@
 #include <xc.h> 
 #include <inttypes.h>
 
+char out[64];
 
 extern int TickFct_Pong_game() ;
-// BTN2 Debouncer 
+
 extern  int TickFct_BtnR(int state) ; 
 
 extern int TickFct_pdl(int state);
+
+extern int TickFct_btnL(int state) ;
 
 #endif

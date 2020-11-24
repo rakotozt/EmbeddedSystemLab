@@ -5,14 +5,14 @@
  *  Pong game paddle
  */
 typedef struct Paddle {
-    short x, y, speed, score;
+    int x, y, speed, score;
 } Paddle;
 
 /*
  *  Pong game moving ball
  */
 typedef struct Ball {
-    short x, y, speedX, speedY;
+    int x, y, speedX, speedY;
 } Ball;
 
 #endif // TYPES_H_
