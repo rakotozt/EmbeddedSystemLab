@@ -35,6 +35,11 @@ extern uint8_t initial;
 #define PADDLE_HEIGHT 60
 
 
+
+
+
+
+
 enum PNG_States { PNG_Initial, PNG_Start_L, PNG_Move, PNG_StartR, PNG_Left, PNG_Right, PNG_Restart, PNG_Gameover } PNG_State;
 
 TickFct_Pong_game() {
@@ -98,7 +103,7 @@ TickFct_Pong_game() {
          else if (PORTBbits.RB9==1) {
            
             PNG_State = PNG_StartR;
-            sound=1; 
+            
          }
          break;
       case PNG_Left:
@@ -185,38 +190,46 @@ TickFct_Pong_game() {
          yposB = pdlR + pLength/2;
          direction =0;
          state=3;
-         
+         sound=0;
          break;
       case PNG_Left:
+        
                  if (yposB <= pdlR + 20){
              speedX=40;
+             sound=1;
              }
                  else if((yposB <= pdlR+40)&&(yposB > pdlR+20)){
              speedX=20;
+             sound=1;
              }
                  else if((yposB <= pdlR+ 60)&&(yposB > pdlR+40)){
              speedX=40;
+             sound=1;
              }
+                 else{sound=0;}
           
           direction =1;
          state=4;
-         sound=1;
+         
          break;
       case PNG_Right:
           
            if (yposB <= pdlR + 20){
              speedX=40;
+             sound=1;
              }
            else if((yposB <= pdlR+40)&&(yposB > pdlR+20)){
              speedX=20;
+             sound=1;
              }
            else if((yposB <= pdlR+ 60)&&(yposB > pdlR+40)){
              speedX=40;
+             sound=1;
              }
-          
+           else{sound=0;}
          direction =0;
          state=5;
-         sound=1;
+         
          break;
       case PNG_Restart:
          if (leftWin){

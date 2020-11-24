@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=Adafruit_2_4_LCD_Serial_Library/glcdfont.c Adafruit_2_4_LCD_Serial_Library/tft_gfx.c Adafruit_2_4_LCD_Serial_Library/tft_master.c Adafruit_2_4_LCD_Serial_Library/adc_intf.c Adafruit_2_4_LCD_Serial_Library/lcd_gui.c Adafruit_2_4_LCD_Serial_Library/port_in.c Adafruit_2_4_LCD_Serial_Library/main2.c Adafruit_2_4_LCD_Serial_Library/timer1.c Adafruit_2_4_LCD_Serial_Library/game_fsm.c Adafruit_2_4_LCD_Serial_Library/dac4822.c Adafruit_2_4_LCD_Serial_Library/dds.c
+SOURCEFILES_QUOTED_IF_SPACED=Adafruit_2_4_LCD_Serial_Library/glcdfont.c Adafruit_2_4_LCD_Serial_Library/tft_gfx.c Adafruit_2_4_LCD_Serial_Library/tft_master.c Adafruit_2_4_LCD_Serial_Library/adc_intf.c Adafruit_2_4_LCD_Serial_Library/lcd_gui.c Adafruit_2_4_LCD_Serial_Library/port_in.c Adafruit_2_4_LCD_Serial_Library/main2.c Adafruit_2_4_LCD_Serial_Library/game_fsm.c Adafruit_2_4_LCD_Serial_Library/dac4822.c Adafruit_2_4_LCD_Serial_Library/dds.c Adafruit_2_4_LCD_Serial_Library/timer2.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/glcdfont.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/tft_gfx.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/tft_master.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/adc_intf.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/lcd_gui.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/port_in.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/main2.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/game_fsm.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dac4822.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/glcdfont.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/tft_gfx.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/tft_master.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/adc_intf.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/lcd_gui.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/port_in.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/main2.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/game_fsm.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dac4822.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/glcdfont.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/tft_gfx.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/tft_master.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/adc_intf.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/lcd_gui.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/port_in.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/main2.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/game_fsm.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dac4822.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/glcdfont.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/tft_gfx.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/tft_master.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/adc_intf.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/lcd_gui.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/port_in.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/main2.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/game_fsm.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dac4822.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o.d ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/glcdfont.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/tft_gfx.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/tft_master.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/adc_intf.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/lcd_gui.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/port_in.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/main2.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/game_fsm.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dac4822.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o
+OBJECTFILES=${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/glcdfont.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/tft_gfx.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/tft_master.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/adc_intf.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/lcd_gui.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/port_in.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/main2.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/game_fsm.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dac4822.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o
 
 # Source Files
-SOURCEFILES=Adafruit_2_4_LCD_Serial_Library/glcdfont.c Adafruit_2_4_LCD_Serial_Library/tft_gfx.c Adafruit_2_4_LCD_Serial_Library/tft_master.c Adafruit_2_4_LCD_Serial_Library/adc_intf.c Adafruit_2_4_LCD_Serial_Library/lcd_gui.c Adafruit_2_4_LCD_Serial_Library/port_in.c Adafruit_2_4_LCD_Serial_Library/main2.c Adafruit_2_4_LCD_Serial_Library/timer1.c Adafruit_2_4_LCD_Serial_Library/game_fsm.c Adafruit_2_4_LCD_Serial_Library/dac4822.c Adafruit_2_4_LCD_Serial_Library/dds.c
+SOURCEFILES=Adafruit_2_4_LCD_Serial_Library/glcdfont.c Adafruit_2_4_LCD_Serial_Library/tft_gfx.c Adafruit_2_4_LCD_Serial_Library/tft_master.c Adafruit_2_4_LCD_Serial_Library/adc_intf.c Adafruit_2_4_LCD_Serial_Library/lcd_gui.c Adafruit_2_4_LCD_Serial_Library/port_in.c Adafruit_2_4_LCD_Serial_Library/main2.c Adafruit_2_4_LCD_Serial_Library/game_fsm.c Adafruit_2_4_LCD_Serial_Library/dac4822.c Adafruit_2_4_LCD_Serial_Library/dds.c Adafruit_2_4_LCD_Serial_Library/timer2.c
 
 
 
@@ -156,13 +156,6 @@ ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/main2.o: Adafruit_2_4_LCD_Serial_Li
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"Adafruit_2_4_LCD_Serial_Library" -MMD -MF "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/main2.o.d" -o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/main2.o Adafruit_2_4_LCD_Serial_Library/main2.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	@${FIXDEPS} "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/main2.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o: Adafruit_2_4_LCD_Serial_Library/timer1.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library" 
-	@${RM} ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o.d 
-	@${RM} ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"Adafruit_2_4_LCD_Serial_Library" -MMD -MF "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o.d" -o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o Adafruit_2_4_LCD_Serial_Library/timer1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
-	@${FIXDEPS} "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ 
-	
 ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/game_fsm.o: Adafruit_2_4_LCD_Serial_Library/game_fsm.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library" 
 	@${RM} ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/game_fsm.o.d 
@@ -183,6 +176,13 @@ ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o: Adafruit_2_4_LCD_Serial_Libr
 	@${RM} ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"Adafruit_2_4_LCD_Serial_Library" -MMD -MF "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o.d" -o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o Adafruit_2_4_LCD_Serial_Library/dds.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	@${FIXDEPS} "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o: Adafruit_2_4_LCD_Serial_Library/timer2.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library" 
+	@${RM} ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o.d 
+	@${RM} ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"Adafruit_2_4_LCD_Serial_Library" -MMD -MF "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o.d" -o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o Adafruit_2_4_LCD_Serial_Library/timer2.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	@${FIXDEPS} "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ 
 	
 else
 ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/glcdfont.o: Adafruit_2_4_LCD_Serial_Library/glcdfont.c  nbproject/Makefile-${CND_CONF}.mk
@@ -234,13 +234,6 @@ ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/main2.o: Adafruit_2_4_LCD_Serial_Li
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"Adafruit_2_4_LCD_Serial_Library" -MMD -MF "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/main2.o.d" -o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/main2.o Adafruit_2_4_LCD_Serial_Library/main2.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	@${FIXDEPS} "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/main2.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o: Adafruit_2_4_LCD_Serial_Library/timer1.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library" 
-	@${RM} ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o.d 
-	@${RM} ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"Adafruit_2_4_LCD_Serial_Library" -MMD -MF "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o.d" -o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o Adafruit_2_4_LCD_Serial_Library/timer1.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
-	@${FIXDEPS} "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer1.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ 
-	
 ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/game_fsm.o: Adafruit_2_4_LCD_Serial_Library/game_fsm.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library" 
 	@${RM} ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/game_fsm.o.d 
@@ -261,6 +254,13 @@ ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o: Adafruit_2_4_LCD_Serial_Libr
 	@${RM} ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"Adafruit_2_4_LCD_Serial_Library" -MMD -MF "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o.d" -o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o Adafruit_2_4_LCD_Serial_Library/dds.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	@${FIXDEPS} "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/dds.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o: Adafruit_2_4_LCD_Serial_Library/timer2.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library" 
+	@${RM} ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o.d 
+	@${RM} ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"Adafruit_2_4_LCD_Serial_Library" -MMD -MF "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o.d" -o ${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o Adafruit_2_4_LCD_Serial_Library/timer2.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	@${FIXDEPS} "${OBJECTDIR}/Adafruit_2_4_LCD_Serial_Library/timer2.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ 
 	
 endif
 
