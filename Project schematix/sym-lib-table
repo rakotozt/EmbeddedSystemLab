@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name Pong-rescue)(type Legacy)(uri ${KIPRJMOD}/Pong-rescue.lib)(options "")(descr ""))
-)
